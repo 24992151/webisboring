@@ -1,15 +1,16 @@
-/* Main Body & Layout */
+/* Header & Nav Content w/ Page info */
 body, h1, h2, p, ul {
   margin: 0;
   padding: 0;
 }
 
+/* Main Body & Layout */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
 }
 
-/* Logo */
+/* Header */
 header {
   background-color: #171E24;
   color: #fff;
@@ -78,6 +79,7 @@ nav ul li a:hover {
   border-radius: 5px;
 }
 
+/* Homepage Content */
 /* Main Image */
 section img {
   width: 100%;
@@ -90,27 +92,46 @@ section {
   text-align: center;
 }
 
-.brief-history h2, .origins h2 {
-  color: #333;
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.brief-history p, .origins p {
-  color: #555;
+section p {
+  color: black;
   font-size: 16px;
   line-height: 1.6;
+  padding: 15px;
 }
 
-.brief-history p:first-child, .origins p:first-child {
+/* Section Styling */
+.origins {
+  margin-bottom: 80px;
+}
+
+/* Image gallery */
+.image-gallery {
+  background-color: #95bac2;
+  padding: 20px 0;
+}
+
+.gallery {
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  flex: 1;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.gallery-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.gallery-item .date {
+  color: #f53533;
+  font-size: 14px;
   font-weight: bold;
-}
-
-.brief-history p, .origins p {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer */
