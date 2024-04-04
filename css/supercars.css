@@ -81,9 +81,30 @@ nav ul li a:hover {
 }
 
 /* Supercar Page */
+body {
+  padding-left: 0;
+}
+
 main {
-  margin-top: 140px;
-  padding-left: 27%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 1100px;
+}
+
+img {
+  max-width: 100%;
+  margin: 10px;
+}
+
+img[src="../assets/engine.png"],
+img[src="../assets/gtr2.png"] {
+  width: 200px;
+}
+
+img[src="../assets/gtr2.png"] {
+  width: 600px;
 }
 
 .sidebar {
@@ -96,6 +117,22 @@ main {
   list-style-type: none;
 }
 
+.hover-text {
+  position: absolute;
+  bottom: 180px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(255, 255, 255);
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  display: none;
+  font-size: 24px;
+}
+
+.hover-area:hover + #hover-text {
+  display: block;
+}
 
 /* Footer */
 footer {
