@@ -94,13 +94,8 @@ body, html {
   z-index: -1;
 }
 
-/* Timeline */
-.timeline-section {
-  text-align: center;
-}
-
 .timeline {
-  width: 2030px;
+  width: 1200px;
   padding-bottom: 5%;
 }
 
@@ -121,37 +116,84 @@ body, html {
 
 .content1 {
   position: absolute;
-  top: 380px;
-  left: 30%;
+  top: 250px;
+  left: 20%;
 }
 
 .content2 {
   position: absolute;
-  top: 960px;
-  left: 30%;
+  top: 1240px;
+  left: 20%;
 }
 
 .content3 {
   position: absolute;
-  top: 1570px;
-  left: 30%;
+  top: 2200px;
+  left: 20%;
 }
 
 .content4 {
   position: absolute;
-  top: 2200px;
-  left: 30%;
+  top: 3200px;
+  left: 20%;
 }
 
 .content5 {
   position: absolute;
-  top: 2790px;
-  left: 30%;
+  top: 4200px;
+  left: 20%;
 }
 
 .timeline-image {
   width: 200px;
   height: auto;
+}
+
+/* Mobile Compatibility */
+@media screen and (max-width: 768px) {
+  .timeline {
+    width: 400px;
+  }
+
+  .content1,
+  .content2,
+  .content3,
+  .content4,
+  .content5 {
+    width: 70%;
+    font-size: 70%;
+  }
+
+  .content1 {
+    position: absolute;
+    top: 12%;
+    left: 10%;
+  }
+
+  .content2 {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+  }
+
+  .content3 {
+    position: absolute;
+    top: 90%;
+    left: 10%;
+  }
+
+  .content4 {
+    position: absolute;
+    top: 130%;
+    left: 10%;
+  }
+
+  .content5 {
+    position: absolute;
+    top: 170%;
+    left: 10%;
+    padding-bottom: 10%;
+  }
 }
 
 /* Footer */
