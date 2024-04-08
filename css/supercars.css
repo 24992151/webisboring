@@ -8,7 +8,6 @@ body, h1, h2, p, ul {
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #95bac2;
 }
 
 /* Header */
@@ -85,6 +84,16 @@ body {
   padding-left: 0;
 }
 
+/* Live background */
+#bgVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
 main {
   display: flex;
   align-items: center;
@@ -132,6 +141,13 @@ img[src="../assets/gtr2.png"] {
 
 .hover-area:hover + #hover-text {
   display: block;
+}
+
+/* Mobile Compatibility */
+@media screen and (max-width: 768px) {
+  img[src="../assets/engine.png"] {
+    padding-bottom: 15%;
+  }
 }
 
 /* Footer */

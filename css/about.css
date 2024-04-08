@@ -91,11 +91,13 @@ nav ul li a:hover {
 
 /* about section */
 .about-section {
+  font-size: 20px;
   padding: 10px 20px;
-  margin: 300px auto 0;
+  margin: 250px auto 0;
   max-width: 1200px;
   background-color: #fff;
   border-radius: 20px;
+  margin-bottom: 15%;
 }
 
 .about-section p {
