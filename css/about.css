@@ -1,0 +1,128 @@
+/* Header & Nav Content w/ Page info */
+body, h1, h2, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Body & Layout */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #171E24;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  width: 150px;
+  height: auto;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  order: 3;
+}
+
+.menu-toggle:focus {
+  outline: none;
+}
+
+.menu-toggle .hamburger,
+.menu-toggle .hamburger:before,
+.menu-toggle .hamburger:after {
+  content: '';
+  display: block;
+  background-color: #fff;
+  height: 3px;
+  width: 25px;
+  margin: 5px 0;
+}
+
+/* Navigation */
+nav {
+  display: none;
+  order: 2;
+}
+
+header.nav-open nav {
+  display: block;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: right;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+nav ul li a:hover {
+  background-color: #E46610;
+  border-radius: 5px;
+}
+
+/* Live background */
+#bgVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+/* about section */
+.about-section {
+  padding: 10px 20px;
+  margin: 300px auto 0;
+  max-width: 1200px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.about-section p {
+  margin-bottom: 10px;
+}
+
+.social-links {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-links img {
+  width: 50px;
+}
+
+/* Footer */
+footer {
+  background-color: #171E24;
+  color: #fff;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
