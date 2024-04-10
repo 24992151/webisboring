@@ -79,24 +79,19 @@ nav ul li a:hover {
   border-radius: 5px;
 }
 
-/* Homepage Content */
-/* Main Image */
-section img {
-  width: 100%;
-  height: auto;
-}
-
 /* Main Content Section */
-section {
-  margin-bottom: 40px;
-  text-align: center;
+main {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: calc(100vh - 60px);
 }
 
-section p {
-  color: black;
-  font-size: 16px;
-  line-height: 1.6;
-  padding: 15px;
+/* Main Content Sections */
+section {
+  flex: 0 0 auto;
+  padding: 0;
 }
 
 /* Live background */
@@ -109,14 +104,18 @@ section p {
   z-index: -1;
 }
 
-/* Section Styling */
+/* Hero Video */
+#r34{
+  width: 100%;
+  height: 100%;
+}
+
+/* Origins Section */
 .origins {
   margin-bottom: 80px;
-  background-color: #fff;
   font-size: 20px;
   padding: 10px 20px;
-  margin: 10px auto 0;
-  max-width: 2400px;
+  max-width: 1400px;
   border-radius: 20px;
   margin-bottom: 3%;
 }
@@ -133,14 +132,15 @@ section p {
 .gallery-item {
   flex: 1;
   text-align: center;
-  margin: 0 10px;
+  margin: 10px;
   margin-bottom: 20px;
+  max-width: 800px;
 }
 
 .gallery-item img {
-  max-width: 50%;
+  max-width: 100%;
   height: auto;
-  margin-bottom: 10px;
+  border-radius: 5px;
 }
 
 .gallery-item .date {
@@ -149,13 +149,13 @@ section p {
   font-weight: bold;
 }
 
+
+/* Brief History Section */
 .brief-history {
   margin-bottom: 80px;
-  background-color: #fff;
   font-size: 20px;
   padding: 10px 20px;
-  margin: 10px auto 0;
-  max-width: 2400px;
+  max-width: 1400px;
   border-radius: 20px;
 }
 
@@ -175,4 +175,9 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height:0;
 }
