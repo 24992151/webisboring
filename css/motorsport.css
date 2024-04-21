@@ -18,6 +18,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 99%;
 }
 
 header img {
@@ -25,7 +28,6 @@ header img {
   height: auto;
 }
 
-/* Hamburger Menu */
 .menu-toggle {
   background: none;
   border: none;
@@ -48,7 +50,6 @@ header img {
   margin: 5px 0;
 }
 
-/* Navigation */
 nav {
   display: none;
   order: 2;
@@ -100,6 +101,29 @@ nav ul li a:hover {
   flex: 1;
   border-radius: 5px;
   margin-right: 20px;
+  opacity: 0;
+  animation: cardPop 0.5s forwards; /* CSS Animation Pop In */
+}
+
+/* CSS Animation Pop In Frame Time */
+.card:nth-child(1) {
+  animation-delay: 0.5s;
+}
+
+.card:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.card:nth-child(3) {
+  animation-delay: 1.5s;
+}
+
+.card:nth-child(4) {
+  animation-delay: 2s;
+}
+
+.card:nth-child(5) {
+  animation-delay: 2.5s;
 }
 
 .card img {
@@ -127,6 +151,18 @@ nav ul li a:hover {
   color: #fff;
 }
 
+/* Define keyframes for the animation */
+@keyframes cardPop {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 /* Mobile Compatibility */
 @media only screen and (max-width: 768px) {
   .motorsport-cards {
@@ -138,15 +174,4 @@ nav ul li a:hover {
     margin-right: 0;
     margin-bottom: 20px;
   }
-}
-
-/* Footer */
-footer {
-  background-color: #171E24;
-  color: #fff;
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
 }
