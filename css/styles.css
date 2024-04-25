@@ -93,6 +93,7 @@ main {
 section {
   flex: 0 0 auto;
   padding: 0;
+  zoom: 73%;
 }
 
 /* Live background */

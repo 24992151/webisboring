@@ -18,6 +18,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 99%;
 }
 
 header img {
@@ -25,7 +28,6 @@ header img {
   height: auto;
 }
 
-/* Hamburger Menu */
 .menu-toggle {
   background: none;
   border: none;
@@ -48,7 +50,6 @@ header img {
   margin: 5px 0;
 }
 
-/* Navigation */
 nav {
   display: none;
   order: 2;
@@ -93,7 +94,7 @@ nav ul li a:hover {
 .about-section {
   font-size: 20px;
   padding: 10px 20px;
-  margin: 250px auto 0;
+  margin: 125px auto 0;
   max-width: 1200px;
   background-color: #fff;
   border-radius: 20px;
@@ -116,15 +117,4 @@ nav ul li a:hover {
 
 .social-links img {
   width: 50px;
-}
-
-/* Footer */
-footer {
-  background-color: #171E24;
-  color: #fff;
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
 }

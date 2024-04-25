@@ -18,6 +18,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 99%;
 }
 
 header img {
@@ -25,7 +28,6 @@ header img {
   height: auto;
 }
 
-/* Hamburger Menu */
 .menu-toggle {
   background: none;
   border: none;
@@ -48,7 +50,6 @@ header img {
   margin: 5px 0;
 }
 
-/* Navigation */
 nav {
   display: none;
   order: 2;
