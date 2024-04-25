@@ -44,4 +44,11 @@ document.addEventListener('DOMContentLoaded', function () {
       }
       return false;
   }
+
+  // Linking Heritage page
+  var heritageLink = document.querySelector('nav ul li a[href="heritage.html"]');
+  heritageLink.addEventListener('click', function(event) {
+      event.preventDefault();
+      window.location.href = 'heritage.html';
+  });
 });
